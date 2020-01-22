@@ -29,7 +29,7 @@ class MyThread( threading.Thread ):
         self.detenerNA()
 
     def detenerNA(self):
-        print("Acá llega a detener el nodeagent del la celda: " + self.node)
+        print("Acá llega a detener el nodeagent de la celda: " + self.node)
 #        AdminControl.stopServer( self.server, self.node, "immediate" )
         time.sleep( 1 )
 
