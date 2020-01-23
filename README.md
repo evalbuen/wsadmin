@@ -1,2 +1,0 @@
-# wsadmin
-Automatizaciones con WSADMIN
