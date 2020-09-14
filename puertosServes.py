@@ -43,7 +43,7 @@ if __name__ == "__main__":
                 pts = AdminTask.listServerPorts( sname, nodo ).split( lineSeparator )
                 for puerto in pts:
                     datosPuerto = re.search(
-                        "\[\[(\S.+) .+\[\[host (\S.*)\].+node (\S.+)\].+\[server (\S.+)\].+\[port (\S.+)\].+\]\]",
+                        "\[\[(\S.+) .+\[\[host (\S.*)\].+node (\S.+)\].+\[server (\S.+)\].+\[port (\w+)\].+\]\]",
                         puerto )
                     nombrePuerto = datosPuerto.group( 1 )
                     maquinaPuerto = datosPuerto.group( 2 )
